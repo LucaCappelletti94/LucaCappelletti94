@@ -1,16 +1,17 @@
-### Hi there 👋
+# Luca Cappelletti
 
-<!--
-**LucaCappelletti94/LucaCappelletti94** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I work on Rust, SQL, and machine learning at the University of Fribourg with the [Earth Metabolome Initiative](https://github.com/earth-metabolome-initiative), and am affiliated with the Environmental Genomics and Systems Biology Division at [Lawrence Berkeley National Laboratory](https://phonebook.lbl.gov/?search=LucaCappelletti). I am one of the main contributors to [Diesel](https://github.com/diesel-rs/diesel), [sqlparser-rs](https://github.com/apache/datafusion-sqlparser-rs), and [bhtsne](https://github.com/frjnn/bhtsne) (and its playground [dioxus-tsne](https://github.com/LucaCappelletti94/dioxus-tsne)), and have contributed spectral-similarity algorithms to [matchms](https://github.com/matchms/matchms).
 
-Here are some ideas to get you started:
+I am building a local-first Rust application stack in which native and browser clients work against local SQLite replicas while PostgreSQL remains authoritative. It is designed to give one Rust codebase immediate local reads and optimistic writes, offline operation, live query subscriptions, and authorization-preserving synchronization across native and WebAssembly applications. The result would remove the need for separate client data layers, bespoke synchronization protocols, and a network round trip for every interaction.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[connetto-rs](https://github.com/LucaCappelletti94/connetto-rs) coordinates transport, optimistic mutations, reconnection, schema distribution, query subscriptions, file synchronization, and authorization-aware change delivery. Its independently useful building blocks include [pg2sqlite](https://github.com/LucaCappelletti94/pg2sqlite) for translating PostgreSQL schemas and queries into SQLite, including row-level security emulation, FTS5, pgvector, and PostGIS mappings; [subql](https://github.com/LucaCappelletti94/subql) for routing change-data-capture events to SQL subscriptions; [sqlite-diff-rs](https://github.com/LucaCappelletti94/sqlite-diff-rs) for changesets and patchsets; [rls2fga](https://github.com/LucaCappelletti94/rls2fga) for translating row-level security policies into OpenFGA models; and [diesel-builders](https://github.com/LucaCappelletti94/diesel-builders) for type-safe construction across related tables. [SQLiteGIS](https://github.com/LucaCappelletti94/sqlitegis) closes the spatial portability gap with PostGIS-style functions, EWKB compatibility, R-tree indexes, Diesel integration, and native and WebAssembly loadable extensions, with a [live in-browser demo](https://sqlitegis.luca.phd/).
+
+I am the main contributor to [OpenScientist](https://github.com/openscientist-io/openscientist), an autonomous hypothesis-testing agent for scientific data. I built its provider and agent layers for hosted services and open models served through [vLLM](https://github.com/vllm-project/vllm) and [llama.cpp](https://github.com/ggml-org/llama.cpp), its air-gapped execution mode, and its [Oh My Pi](https://github.com/can1357/oh-my-pi) harness integration. I generally like to work with open models, currently favoring [Qwen3.8-Flash-Next](https://unsloth.ai/docs/models/qwen3.8-next).
+
+During my PhD, I was the main contributor to [ensmallen](https://github.com/AnacletoLAB/ensmallen), [embiggen](https://github.com/monarch-initiative/embiggen), and [GRAPE](https://github.com/AnacletoLAB/grape), a Rust and Python ecosystem for large-scale graph processing and representation learning.
+
+I develop [geometric-traits](https://github.com/earth-metabolome-initiative/geometric-traits), a trait-first, `no_std` Rust graph algorithms library implementing, among others, Blossom V and Micali-Vazirani matching, Boyer-Myrvold planarity, VF2 subgraph isomorphism, Leiden community detection, and Barnes-Hut ForceAtlas2. I also maintain the probabilistic sketching libraries [hyperloglog-rs](https://github.com/LucaCappelletti94/hyperloglog-rs) and [minhash-rs](https://github.com/LucaCappelletti94/minhash-rs), with more of the same family in the making.
+
+Within the Earth Metabolome Initiative, I build Rust libraries for cheminformatics and mass spectrometry, including [smiles-rs](https://github.com/earth-metabolome-initiative/smiles-rs), [smarts-rs](https://github.com/earth-metabolome-initiative/smarts-rs), [molecular-formulas](https://github.com/earth-metabolome-initiative/molecular-formulas), [elements-rs](https://github.com/earth-metabolome-initiative/elements-rs), [mascot-rs](https://github.com/earth-metabolome-initiative/mascot-rs), and [npclassifier-rs](https://github.com/earth-metabolome-initiative/npclassifier-rs).
+
+[I have also developed Python utilities](https://pypi.org/user/LucaCappelletti94/) including [csv_trimming](https://github.com/LucaCappelletti94/csv_trimming), [dictances](https://github.com/LucaCappelletti94/dictances), [compress_json](https://github.com/LucaCappelletti94/compress_json), [pygifsicle](https://github.com/LucaCappelletti94/pygifsicle), [silence_tensorflow](https://github.com/LucaCappelletti94/silence_tensorflow), and [dict_hash](https://github.com/LucaCappelletti94/dict_hash).
